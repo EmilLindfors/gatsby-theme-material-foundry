@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-theme-material-foundry",
+  "version": "0.0.45",
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "license": "MIT",
+  "author": "emil",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@material-ui/icons": "4.2.1",
+    "chroma-js": "2.0.4",
+    "gatsby-plugin-material-ui": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-webfonts": "^1.0.12",
+    "gatsby-plugin-compile-es6-packages": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@material-ui/icons": "4.2.1",
+    "@material-ui/core": ">=4.0.0",
+    "@material-ui/styles": ">=4.0.0",
+    "gatsby": ">=2.0.75",
+    "react-helmet": ">=5.2.0"
+  },
+  "keywords": []
+}
