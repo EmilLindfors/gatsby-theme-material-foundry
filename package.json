@@ -9,10 +9,11 @@
   "dependencies": {
     "@material-ui/icons": "4.2.1",
     "chroma-js": "2.0.4",
+    "classnames": "2.2.6",
+    "gatsby-plugin-compile-es6-packages": "^1.1.0",
     "gatsby-plugin-material-ui": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-webfonts": "^1.0.12",
-    "gatsby-plugin-compile-es6-packages": "^1.1.0"
+    "gatsby-plugin-webfonts": "^1.0.12"
   },
   "peerDependencies": {
     "@material-ui/icons": "4.2.1",
