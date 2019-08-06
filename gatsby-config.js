@@ -5,6 +5,10 @@ const defaultWebFontsConfig = {
         family: `Roboto`,
         variants: [`300`, `400`, `500`],
       },
+      {
+        family: `Roboto Slab`,
+        variants: [`400`, `700`],
+      },
     ],
   },
 }
