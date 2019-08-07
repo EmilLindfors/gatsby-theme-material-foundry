@@ -8,3 +8,4 @@ export { Hero } from "./hero";
 export { Text, Title } from "./typography";
 export { default as TabPill } from "./tabpill";
 export { default as Badge } from "./badge";
+export { default as Parallax } from "./parallax";
