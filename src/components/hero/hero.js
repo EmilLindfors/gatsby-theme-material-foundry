@@ -1,6 +1,5 @@
 import React from "react"
-import Button from "../button"
-import {Section} from "../section"
+import {Section, Title, Text, Button} from "../"
 import {
   Grid,
   makeStyles,
@@ -23,7 +22,7 @@ function Hero({ svg, title, subtitle, color, button, ...props }) {
   if (svg) {
     return (
       <Section {...props}>
-        <Container>
+        <Container  className={classes.heroInner}>
           <Grid
             container
             justify="space-evenly"
@@ -33,12 +32,12 @@ function Hero({ svg, title, subtitle, color, button, ...props }) {
             spacing={3}
           >
             <Grid item xs={12} sm={4}>
-              <Typography variant="h3" component="h1">
+              <Title variant="h3" component="h1">
                 {title}
-              </Typography>
-              <Typography variant="subtitle1" component="h3">
+              </Title>
+              <Text variant="h5" component="h3">
                 {subtitle}
-              </Typography>
+              </Text>
               <br />
               {button && (
                 <Button
@@ -57,9 +56,9 @@ function Hero({ svg, title, subtitle, color, button, ...props }) {
               <Grid item xs={12} sm={4}>
                 <HeroSvg
                   width={300}
-                  fill1="white"
+                  fill1={color ? "white" : "black"}
                   fill2={theme.palette[color].main}
-                  fill3="white"
+                  fill3={color ? "white" : "black"}
                   fill4={theme.palette[color].main}
                 />
               </Grid>
@@ -82,12 +81,12 @@ function Hero({ svg, title, subtitle, color, button, ...props }) {
             spacing={3}
           >
             <Grid item xs={12} md={8}>
-              <Typography variant="h3" component="h1">
+              <Title variant="h3" component="h1">
                 {title}
-              </Typography>
-              <Typography variant="subtitle1" component="h3">
+              </Title>
+              <Text variant="h5" component="h3">
                 {subtitle}
-              </Typography>
+              </Text>
 
               {button && (
                 <Button
