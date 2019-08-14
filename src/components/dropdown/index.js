@@ -70,7 +70,7 @@ class CustomDropdown extends React.Component {
     })
     let icon = null
     switch (typeof buttonIcon) {
-      case "function":
+      case "object":
         icon = <this.props.buttonIcon className={classes.buttonIcon} />
         break
       case "string":
@@ -95,6 +95,7 @@ class CustomDropdown extends React.Component {
             }}
             onClick={this.handleClick}
           >
+        {console.log(typeof buttonIcon)}
             {icon}
             {buttonText !== undefined ? buttonText : null}
             {caret ? <b className={caretClasses} /> : null}

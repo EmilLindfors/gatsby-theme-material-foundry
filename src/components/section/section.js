@@ -28,6 +28,7 @@ function Section({ ...props }) {
     [classes.primary]: primary,
     [className]: className !== undefined
   });
+  if(image){
   return (
     <section
       style={{
@@ -39,7 +40,18 @@ function Section({ ...props }) {
     >
       {children}
     </section>
-  );
+  )}
+  else {
+    return(
+    <section
+    style={{
+      ...rest
+    }}
+    className={sectionClasses}
+  >
+    {children}
+  </section>)
+  }
 }
 
 export default withStyles(style)(Section);
