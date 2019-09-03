@@ -1,3 +1,5 @@
+import chroma from "chroma-js"
+
 import {
   container,
   defaultFont,
@@ -177,38 +179,79 @@ export const headerStyle = theme => ({
   primary: {
     backgroundColor: theme.palette.primary.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(156, 39, 176, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.primary.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.primary.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.primary.main)
+      .alpha(0.12)
+      .css()}`,
+  },
+  secondary: {
+    backgroundColor: theme.palette.secondary.main,
+    color: "#FFFFFF",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.secondary.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.secondary.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.secondary.main)
+      .alpha(0.12)
+      .css()}`,
   },
   info: {
     backgroundColor: theme.palette.info.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 188, 212, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.info.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.info.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.info.main)
+      .alpha(0.12)
+      .css()}`,
   },
   success: {
     backgroundColor: theme.palette.success.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(76, 175, 80, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.success.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.success.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.success.main)
+      .alpha(0.12)
+      .css()}`,
   },
   warning: {
     backgroundColor: theme.palette.warning.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(255, 152, 0, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.warning.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.warning.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.warning.main)
+      .alpha(0.12)
+      .css()}`,
   },
   error: {
     backgroundColor: theme.palette.error.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(244, 67, 54, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.error.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.error.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.error.main)
+      .alpha(0.12)
+      .css()}`,
   },
   black: {
     backgroundColor: theme.palette.black.main,
     color: "#FFFFFF",
-    boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)",
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.black.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.black.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.black.main)
+      .alpha(0.12)
+      .css()}`,
   },
   transparent: {
     backgroundColor: "transparent !important",

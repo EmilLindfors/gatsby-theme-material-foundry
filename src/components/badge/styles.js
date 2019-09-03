@@ -1,13 +1,6 @@
-import {
-    primaryColor,
-    warningColor,
-    dangerColor,
-    successColor,
-    infoColor,
-    roseColor
-  } from "../styles";
-  
-  const badgeStyle = {
+import chroma from "chroma-js"
+
+const badgeStyle = theme => ({
     badge: {
       marginRight: "3px",
       borderRadius: "12px",
@@ -24,27 +17,71 @@ import {
       width: "fit-content"
     },
     primary: {
-      backgroundColor: primaryColor
+      backgroundColor: theme.palette.primary.main
+    },
+    secondary: {
+      backgroundColor: theme.palette.primary.main
     },
     warning: {
-      backgroundColor: warningColor
+      backgroundColor: theme.palette.warning.main
     },
-    danger: {
-      backgroundColor: dangerColor
+    error: {
+      backgroundColor: theme.palette.error.main
     },
     success: {
-      backgroundColor: successColor
+      backgroundColor: theme.palette.success.main
     },
     info: {
-      backgroundColor: infoColor
+      backgroundColor: theme.palette.info.main
     },
-    rose: {
-      backgroundColor: roseColor
+    black: {
+      backgroundColor: theme.palette.black.main
     },
     gray: {
       backgroundColor: "#6c757d"
-    }
-  };
+    },
+    simple: {
+      "&,&:focus,&:hover,&:visited": {
+        color: "#FFFFFF",
+        background: "transparent",
+      },
+      "&$primary": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.primary.main,
+        },
+      },
+      "&$secondary": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.secondary.main,
+        },
+      },
+      "&$info": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.info.main,
+        },
+      },
+      "&$success": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.success.main,
+        },
+      },
+      "&$warning": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.warning.main,
+        },
+      },
+      "&$black": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.black.main,
+        },
+      },
+      "&$error": {
+        "&,&:focus,&:hover,&:visited": {
+          color: theme.palette.error.main,
+        },
+      },
+    },
+  });
   
   export default badgeStyle;
   

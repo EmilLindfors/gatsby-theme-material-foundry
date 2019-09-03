@@ -86,6 +86,26 @@ const buttonStyle = theme => ({
         .css()}`,
     },
   },
+  secondary: {
+    backgroundColor: theme.palette.secondary.main,
+    boxShadow: `0 2px 2px 0 ${chroma(theme.palette.secondary.main)
+      .alpha(0.14)
+      .css()}, 0 3px 1px -2px ${chroma(theme.palette.secondary.main)
+      .alpha(0.2)
+      .css()}, 0 1px 5px 0 ${chroma(theme.palette.secondary.main)
+      .alpha(0.12)
+      .css()}`,
+    "&:hover,&:focus": {
+      backgroundColor: theme.palette.secondary.main,
+      boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.secondary.main)
+        .alpha(0.42)
+        .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
+        theme.palette.secondary.main
+      )
+        .alpha(0.2)
+        .css()}`,
+    },
+  },
   info: {
     backgroundColor: theme.palette.info.main,
     boxShadow: `0 2px 2px 0 ${chroma(theme.palette.info.main)
@@ -250,6 +270,11 @@ const buttonStyle = theme => ({
     "&$primary": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.primary.main,
+      },
+    },
+    "&$secondary": {
+      "&,&:focus,&:hover,&:visited": {
+        color: theme.palette.secondary.main,
       },
     },
     "&$info": {

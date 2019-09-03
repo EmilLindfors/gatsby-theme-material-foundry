@@ -1,12 +1,5 @@
+import chroma from "chroma-js"
 
-import {
-    roseColor,
-    primaryColor,
-    infoColor,
-    successColor,
-    warningColor,
-    dangerColor
-  } from "../styles";
   
   const navPillsStyle = theme => ({
     root: {
@@ -77,50 +70,92 @@ import {
     primary: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: primaryColor,
-        boxShadow:
-          "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4)"
+        backgroundColor: theme.palette.primary.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.primary.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.primary.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.primary.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
-    
+    secondary: {
+      "&,&:hover": {
+        color: "#FFFFFF",
+        backgroundColor: theme.palette.secondary.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.secondary.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.secondary.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.secondary.main)
+          .alpha(0.12)
+          .css()}`,
+      }
+    },
     info: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: infoColor,
-        boxShadow:
-          "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)"
+        backgroundColor: theme.palette.info.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.info.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.info.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.info.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
     success: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: successColor,
-        boxShadow:
-          "0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12)"
+        backgroundColor: theme.palette.success.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.success.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.success.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.success.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
     warning: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: warningColor,
-        boxShadow:
-          "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)"
+        backgroundColor: theme.palette.warning.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.warning.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.warning.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.warning.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
-    danger: {
+    error: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: dangerColor,
-        boxShadow:
-          "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)"
+        backgroundColor: theme.palette.error.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.error.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.error.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.error.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
-    rose: {
+    black: {
       "&,&:hover": {
         color: "#FFFFFF",
-        backgroundColor: roseColor,
-        boxShadow:
-          "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)"
+        backgroundColor: theme.palette.black.main,
+        boxShadow: `0 2px 2px 0 ${chroma(theme.palette.black.main)
+          .alpha(0.14)
+          .css()}, 0 3px 1px -2px ${chroma(theme.palette.black.main)
+          .alpha(0.2)
+          .css()}, 0 1px 5px 0 ${chroma(theme.palette.black.main)
+          .alpha(0.12)
+          .css()}`,
       }
     },
     alignCenter: {

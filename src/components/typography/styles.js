@@ -1,15 +1,13 @@
 import {
     defaultFont,
-    primaryColor,
-    infoColor,
-    successColor,
-    warningColor,
-    dangerColor,
+
     title,
-    secondaryColor
+
   } from "../styles";
+
+
+const typographyStyle = theme => ({
   
-  const typographyStyle = {
     defaultFontStyle: {
       ...defaultFont,
       fontSize: "14px"
@@ -45,51 +43,51 @@ import {
       ...title
     },
     primary: {
-      color: primaryColor,
+      color: theme.palette.primary.main,
       ...defaultFont
     },
     primaryTitle: {
-      color: primaryColor,
+      color: theme.palette.primary.main,
       ...title
     },
     secondary: {
-      color: secondaryColor,
+      color: theme.palette.secondary.main,
       ...defaultFont
     },
     secondaryTitle: {
-      color: secondaryColor,
+      color: theme.palette.secondary.main,
       ...title
     },
     info: {
-      color: infoColor,
+      color: theme.palette.info.main,
       ...defaultFont
     },
     infoTitle: {
-      color: infoColor,
+      color: theme.palette.info.main,
       ...title
     },
     success: {
-      color: successColor,
+      color: theme.palette.success.main,
       ...defaultFont
     },
     successTitle: {
-      color: successColor,
+      color: theme.palette.success.main,
       ...title
     },
     warning: {
-      color: warningColor,
+      color: theme.palette.warning.main,
       ...defaultFont
     },
     warningTitle: {
-      color: warningColor,
+      color: theme.palette.warning.main,
       ...title
     },
     error: {
-      color: dangerColor,
+      color: theme.palette.error.main,
       ...defaultFont
     },
     errorTitle: {
-      color: dangerColor,
+      color: theme.palette.error.main,
       ...title
     },
     small: {
@@ -104,7 +102,7 @@ import {
       lineHeight: "1",
       color: "#777"
     }
-  };
+  });
   
   export default typographyStyle;
   

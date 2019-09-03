@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-material-foundry",
-  "version": "0.0.47",
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.0.50",
+  "description": "A gatsby theme based on material foundry",
   "license": "MIT",
   "author": "emil",
   "main": "index.js",

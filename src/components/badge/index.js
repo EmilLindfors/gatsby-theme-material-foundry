@@ -1,11 +1,27 @@
 import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import badgeStyle from "./styles";
+import classNames from "classnames"
 
 function Badge({ ...props }) {
-  const { classes, color, children } = props;
+  const {
+    classes,
+    color,
+    children,
+    simple,
+    className,
+    ...rest
+  } = props
+
+  const badgeClasses = classNames({
+    [classes.badge]: true,
+    [classes[color]]: color,
+    [classes.simple]: simple,
+    [className]: className,
+  })
+
   return (
-    <span className={classes.badge + " " + classes[color]}>{children}</span>
+    <span  {...rest} className={badgeClasses}>{children}</span>
   );
 }
 
