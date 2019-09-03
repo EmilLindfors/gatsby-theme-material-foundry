@@ -95,7 +95,6 @@ class CustomDropdown extends React.Component {
             }}
             onClick={this.handleClick}
           >
-        {console.log(typeof buttonIcon)}
             {icon}
             {buttonText !== undefined ? buttonText : null}
             {caret ? <b className={caretClasses} /> : null}

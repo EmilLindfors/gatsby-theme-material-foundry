@@ -20,7 +20,7 @@ const badgeStyle = theme => ({
       backgroundColor: theme.palette.primary.main
     },
     secondary: {
-      backgroundColor: theme.palette.primary.main
+      backgroundColor: theme.palette.secondary.main
     },
     warning: {
       backgroundColor: theme.palette.warning.main

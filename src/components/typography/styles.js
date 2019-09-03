@@ -90,6 +90,14 @@ const typographyStyle = theme => ({
       color: theme.palette.error.main,
       ...title
     },
+    black: {
+      color: theme.palette.black.main,
+      ...defaultFont
+    },
+    blackTitle: {
+      color: theme.palette.black.main,
+      ...title
+    },
     small: {
       fontSize: "65%",
       fontWeight: "400",
