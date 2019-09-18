@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core"
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import chroma from "chroma-js"
 
 const PrimaryOrange = `#fa6900`
@@ -80,4 +80,4 @@ const theme = createMuiTheme({
   },
 })
 
-export default theme
+export default responsiveFontSizes(theme)

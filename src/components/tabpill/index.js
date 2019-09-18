@@ -4,7 +4,7 @@ import classNames from "classnames";
 import SwipeableViews from "react-swipeable-views";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import {withStyles} from "@material-ui/core/styles/"
 import {Tabs, Tab, Grid } from "@material-ui/core";
 
 // core components

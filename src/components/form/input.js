@@ -3,7 +3,7 @@ import React from "react"
 // nodejs library that concatenates classes
 import className from "classnames"
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import {withStyles} from "@material-ui/core/styles/"
 import FormControl from "@material-ui/core/FormControl"
 import InputLabel from "@material-ui/core/InputLabel"
 import Input from "@material-ui/core/Input"

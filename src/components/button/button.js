@@ -4,7 +4,7 @@ import React from "react"
 import classNames from "classnames"
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import {withStyles} from "@material-ui/core/styles/"
 import { Button } from "@material-ui/core"
 
 // core components

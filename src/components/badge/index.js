@@ -1,5 +1,5 @@
 import React from "react";
-import withStyles from "@material-ui/core/styles/withStyles";
+import {withStyles} from "@material-ui/core/styles/"
 import badgeStyle from "./styles";
 import classNames from "classnames"
 

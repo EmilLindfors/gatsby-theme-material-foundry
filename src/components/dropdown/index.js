@@ -4,7 +4,7 @@ import classNames from "classnames"
 // nodejs library to set properties for components
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import {withStyles} from "@material-ui/core/styles/"
 import MenuItem from "@material-ui/core/MenuItem"
 import MenuList from "@material-ui/core/MenuList"
 import ClickAwayListener from "@material-ui/core/ClickAwayListener"

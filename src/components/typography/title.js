@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library to set properties for components
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import {withStyles} from "@material-ui/core/styles/"
 import { Typography } from "@material-ui/core";
 // core components
 import typographyStyle from "./styles";

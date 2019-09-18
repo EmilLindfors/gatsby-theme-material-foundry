@@ -1,4 +1,4 @@
-const parallaxStyle = {
+const parallaxStyle = theme => ({
     parallax: {
       height: "90vh",
       maxHeight: "1000px",
@@ -30,7 +30,7 @@ const parallaxStyle = {
     small: {
       height: "380px"
     }
-  };
+  });
   
   export default parallaxStyle;
   

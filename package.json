@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-material-foundry",
-  "version": "0.0.51",
+  "version": "0.0.53",
   "description": "A gatsby theme based on material foundry",
   "license": "MIT",
   "author": "emil",
@@ -11,7 +11,7 @@
     "chroma-js": "2.0.4",
     "classnames": "2.2.6",
     "gatsby-plugin-compile-es6-packages": "^1.1.0",
-    "gatsby-plugin-material-ui": "^2.1.1",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-react-helmet": "^3.1.0",
     "gatsby-plugin-webfonts": "^1.0.12",
     "react-swipeable-views": "0.13.3"
