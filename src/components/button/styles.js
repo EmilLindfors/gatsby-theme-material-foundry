@@ -76,7 +76,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: theme.palette.primary.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.primary.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -96,7 +96,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.secondary.main,
+      backgroundColor: theme.palette.secondary.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.secondary.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -116,7 +116,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.info.main,
+      backgroundColor: theme.palette.info.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.info.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -136,7 +136,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.success.main,
+      backgroundColor: theme.palette.success.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.success.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -156,7 +156,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.warning.main,
+      backgroundColor: theme.palette.warning.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.warning.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -176,7 +176,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.error.main,
+      backgroundColor: theme.palette.error.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.error.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -196,7 +196,7 @@ const buttonStyle = theme => ({
       .alpha(0.12)
       .css()}`,
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.black.main,
+      backgroundColor: theme.palette.black.dark,
       boxShadow: `0 14px 26px -12px  ${chroma(theme.palette.black.main)
         .alpha(0.42)
         .css()}, 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px ${chroma(
@@ -270,57 +270,102 @@ const buttonStyle = theme => ({
     "&$primary": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.primary.main,
+       
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.primary.light,
+      }
     },
     "&$secondary": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.secondary.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.secondary.light,
+      }
     },
     "&$info": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.info.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.info.light,
+      }
     },
     "&$success": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.success.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.success.light,
+      }
     },
     "&$warning": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.warning.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.warning.light,
+      }
     },
     "&$black": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.black.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.black.light,
+      }
     },
     "&$error": {
       "&,&:focus,&:hover,&:visited": {
         color: theme.palette.error.main,
       },
+      "&:hover":{
+        color: "white",
+        background: theme.palette.error.light,
+      }
     },
     "&$twitter": {
       "&,&:focus,&:hover,&:visited": {
         color: "#55acee",
       },
+      "&:hover":{
+        color: "white",
+        background: "#55acee",
+      }
     },
     "&$facebook": {
       "&,&:focus,&:hover,&:visited": {
         color: "#3b5998",
       },
+      "&:hover":{
+        color: "white",
+        background: "#3b5998",
+      }
     },
     "&$google": {
       "&,&:focus,&:hover,&:visited": {
         color: "#dd4b39",
       },
+      "&:hover":{
+        color: "white",
+        background: "#dd4b39",
+      }
     },
     "&$github": {
       "&,&:focus,&:hover,&:visited": {
         color: "#333333",
       },
+      "&:hover":{
+        color: "white",
+        background: "#333333",
+      }
     },
   },
   transparent: {
